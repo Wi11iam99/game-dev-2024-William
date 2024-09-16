@@ -2,4 +2,12 @@
 
 
 
-input:<input type=text id="myfirstname" value="will">
+input:<input type=text id="myFirstName" value="will">
+<input type=button value="show on page" onclick="{
+    // this is a comment
+  document.getElementById('myDiv01').innerHTML =  'Your name is ' +
+     Document.getElementById('myFirstName').value
+
+  }">
+
+  <div id="myDiv01">...</div>
