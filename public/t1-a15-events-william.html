@@ -6,6 +6,14 @@
 <input type=text id="myFirstName" value="William"
 onBlur="{'alert('onBlur??')}"><br><br>
 
+
+<input type=button value="Show on page" onclick="{
+  document.getElementById('myDiv01').innerHTML= 'Hey'
+}"><br><br>
+
+
+
+
 <body onMouseMove="{
   document.getElementById('myDiv01').innerHTML = 
 'x:${event.clientX}, y:${event.clientY}'
