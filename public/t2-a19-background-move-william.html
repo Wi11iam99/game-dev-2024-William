@@ -34,7 +34,20 @@ background="https://images7.alphacoders.com/333/333223.jpg">
   }, mySpeed01)
 }">
 
+<input type=button id="myButton02" value"Image Right" onclick="{
+  document.getElementById('myImage01').style.left =
+parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'
+}"><br><br>
 
+<input type=button value="Auto Move Left" onclick="{
+  clearInterval(myClock02)
+  myClock02 = setInterval(function(){
+     document.getElementById('myButton02').click()
+  }, 30)
+}">
+
+<img id="myImage01" style="position:relative; width:100px; height:80px; top:0px;
+left:0px;" src"https://mario.wiki.gallery/images/0/06/SMB3_-_Raccoon_Mario.png">
 
 
 
