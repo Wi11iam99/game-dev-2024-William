@@ -1,0 +1,53 @@
+<h2>T2A22 Local Storage William</h2>
+
+<body onload="{
+   myStorage = localStorage.getItem('myStoredText')
+   if(myStorage !=null){
+      document.getElementById('myText').value = myStorage
+   }
+}">
+
+<body onunload="{
+   localStorage.setItem('myStoedText',document.getElementById('myText1').value)
+}">
+
+Text example: <input id="myText1" type=text size=70 value="" placeholder="Write here to store some text"><br>
+
+<input type="button" value"Store Text" onClick"{
+   localStorage.setItem('myStoredText', document.getElementById('myText1').value)
+   alert(document.getElementById('myText1').value + ' \nHas been stored')
+   document.getElementById('myText1').value = ''
+}">
+
+<input type="button" value="Retrive Text" onClick="{
+   document.getElementById('myText1').value = localStorage.getItem('myStoredTexr')
+}">
+
+
+body {
+  background-color: #673d80;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
